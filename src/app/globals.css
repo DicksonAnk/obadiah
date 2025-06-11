@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Light mode variables */
+  --primary-color: #008080;
+  --secondary-color: #CC7722;
+  --background: #FFFFFF;
+  --text-primary: #1F1F1F;
+  --text-muted: #666666;
+}
+
+/* Dark mode variables */
+.dark {
+  --background: #121212;
+  --text-primary: #F1F1F1;
+  --text-muted: #AAAAAA;
+} 
