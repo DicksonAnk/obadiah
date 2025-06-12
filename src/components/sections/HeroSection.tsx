@@ -7,7 +7,7 @@ export default function HeroSection() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="/images/pexels-darkshadephotos-29168548.jpg"
+          src="/images/image6.jpg"
           alt="Beautiful African woman in traditional dress"
           fill
           className="object-cover brightness-[0.85] dark:brightness-[0.75]"
