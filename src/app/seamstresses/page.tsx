@@ -57,144 +57,24 @@ const SeamstressesPage: React.FC = () => {
         </div>
       </div>
 
-      {/* Hero Section */}
+      {/* Hero Section - Text Only */}
       <section className="relative bg-white dark:bg-black py-16 sm:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8">
-              <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white">
-                Turn Your Sewing Skills Into Steady Income
-              </h1>
-              <p className="text-xl text-gray-600 dark:text-gray-300">
-                Join Ghana's premier platform connecting skilled seamstresses with customers who value quality craftsmanship
+          <div className="max-w-3xl mx-auto text-center">
+            <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+              Turn Your Sewing Skills Into Steady Income
+            </h1>
+            <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
+              Join Ghana's premier platform connecting skilled seamstresses with customers who value quality craftsmanship
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <button className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 rounded-lg font-semibold text-lg transition-colors">
+                Start Earning Today
+              </button>
+              <p className="text-gray-600 dark:text-gray-400 self-center">
+                Join 500+ seamstresses already earning
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 rounded-lg font-semibold text-lg transition-colors">
-                  Start Earning Today
-                </button>
-                <p className="text-gray-600 dark:text-gray-400 self-center">
-                  Join 500+ seamstresses already earning
-                </p>
-              </div>
             </div>
-            <div className="relative h-[400px] rounded-lg overflow-hidden">
-              <Image
-                src="/images/seamstress-hero.jpg"
-                alt="Ghanaian seamstress at work"
-                fill
-                className="object-cover"
-                priority
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Benefits Section */}
-      <section className="bg-gray-50 dark:bg-gray-900 py-16 sm:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-12">
-            Why Seamstresses Love Our Platform
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                title: 'Steady Orders',
-                description: 'Regular customers without the hustle of finding them',
-                icon: '📦'
-              },
-              {
-                title: 'Fair Payments',
-                description: 'Competitive rates paid directly to your mobile money',
-                icon: '💰'
-              },
-              {
-                title: 'Flexible Schedule',
-                description: 'Work when you want, from your own space',
-                icon: '⏰'
-              },
-              {
-                title: 'No Marketing Stress',
-                description: 'We handle customer acquisition and communication',
-                icon: '📱'
-              },
-              {
-                title: 'Quality Materials',
-                description: 'Access to premium fabrics through our network',
-                icon: '🧵'
-              },
-              {
-                title: 'Skill Development',
-                description: 'Learn new techniques from fellow seamstresses',
-                icon: '📚'
-              }
-            ].map((benefit, index) => (
-              <div
-                key={index}
-                className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow"
-              >
-                <div className="text-4xl mb-4">{benefit.icon}</div>
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                  {benefit.title}
-                </h3>
-                <p className="text-gray-600 dark:text-gray-300">
-                  {benefit.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* How It Works Section */}
-      <section className="bg-white dark:bg-black py-16 sm:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-12">
-            Your Journey with Us
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
-            {[
-              {
-                step: '1',
-                title: 'Apply',
-                description: 'Submit your portfolio and complete our simple application'
-              },
-              {
-                step: '2',
-                title: 'Get Approved',
-                description: 'We review your work and welcome you to the platform'
-              },
-              {
-                step: '3',
-                title: 'Receive Orders',
-                description: 'Get matched with customers based on your skills and location'
-              },
-              {
-                step: '4',
-                title: 'Create Magic',
-                description: 'Craft beautiful dresses with provided measurements and designs'
-              },
-              {
-                step: '5',
-                title: 'Get Paid',
-                description: 'Receive payment directly to your mobile money account'
-              }
-            ].map((step, index) => (
-              <div
-                key={index}
-                className="relative bg-gray-50 dark:bg-gray-800 p-6 rounded-lg"
-              >
-                <div className="absolute -top-4 -left-4 w-8 h-8 bg-orange-600 text-white rounded-full flex items-center justify-center font-bold">
-                  {step.step}
-                </div>
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2 mt-4">
-                  {step.title}
-                </h3>
-                <p className="text-gray-600 dark:text-gray-300">
-                  {step.description}
-                </p>
-              </div>
-            ))}
           </div>
         </div>
       </section>
