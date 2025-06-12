@@ -13,22 +13,22 @@ interface Testimonial {
 
 const testimonials: Testimonial[] = [
   {
-    name: 'Akosua Mensah',
+    name: 'Mr Benneh',
     location: 'Kumasi',
     story: "Since joining, I've tripled my monthly income and have steady work every week. The platform has helped me build a loyal customer base.",
-    image: '/images/seamstress-1.jpg'
+    image: '/images/seamstresses/seamstress-1.jpg'
   },
   {
     name: 'Abena Osei',
     location: 'Accra',
     story: "The flexible schedule allows me to balance my family life while growing my business. I love the quality of customers I get through the platform.",
-    image: '/images/seamstress-2.jpg'
+    image: '/images/seamstresses/seamstress-2.jpg'
   },
   {
     name: 'Efua Kufuor',
     location: 'Cape Coast',
     story: "The training opportunities and community support have helped me improve my skills and take on more complex projects.",
-    image: '/images/seamstress-3.jpg'
+    image: '/images/seamstresses/seamstress-3.jpg'
   }
 ];
 
